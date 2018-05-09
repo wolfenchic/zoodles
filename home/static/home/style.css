@@ -1,0 +1,42 @@
+body {
+    font-family: 'Indie Flower', cursive;
+}
+
+a, h4, h3, li {
+   color: #5EC5C4;
+}
+
+.banner {
+            background-size: cover;
+            width: 100%;
+            z-index: 1;
+}
+
+
+.navbar-trans {
+  background: white; }
+
+.navbar-nav {
+    font-size: 1.5rem;
+}
+
+
+#landingImage {
+position: relative;
+text-align: left;
+color: white;
+margin-top: 0px;
+-webkit-filter: brightness(110%) saturate(90%);
+
+}
+
+
+.landingText{
+    position: absolute;
+    margin: auto;
+    margin-left: 110px;
+    top: 30%; left: 0px; bottom: 0; right: 0;
+	font-family: 'Indie Flower', cursive;
+	color: #5EC5C4;
+	font-size: 4rem;
+}
