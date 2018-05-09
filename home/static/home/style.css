@@ -1,9 +1,15 @@
 body {
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Montserrat', sans-serif;
 }
 
-a, h4, h3, li {
+a, h4, h3, h2, h1 {
    color: #5EC5C4;
+}
+
+.btn-default {
+    background-color: #5EC5C4;
+    color: white;
+    font-size: 2rem;
 }
 
 .banner {
@@ -17,7 +23,7 @@ a, h4, h3, li {
   background: white; }
 
 .navbar-nav {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 
 
@@ -35,8 +41,45 @@ margin-top: 0px;
     position: absolute;
     margin: auto;
     margin-left: 110px;
-    top: 30%; left: 0px; bottom: 0; right: 0;
+    top: 50%; left: 0px; bottom: 0; right: 0;
 	font-family: 'Indie Flower', cursive;
 	color: #5EC5C4;
 	font-size: 4rem;
+}
+
+.categories {
+    background-image:url(./images/crayons2.jpeg);
+    background-size: cover;
+    -webkit-filter: brightness(110%);
+    padding-bottom: 150px;
+    
+}
+
+.categoryHeader {
+    font-family: 'Indie Flower', cursive;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.categoryCard {
+    background-color: white;
+    padding: 20px 10px 20px 10px;
+    padding-bottom: 40px;
+    /*border: 15px double  #5EC5C4;*/
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.20), 0 0px 5px 0 rgba(0, 0, 0, 0.20);
+    margin: auto;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.card-img-top {
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+@media only screen and (max-width: 500px) {
+    .landingText {
+        font-size: 2rem;
+        margin: auto;
+    }
 }
