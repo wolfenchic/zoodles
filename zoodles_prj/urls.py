@@ -16,8 +16,10 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 from home.views import get_home_page
+from home.views import get_about_page
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', get_home_page, name='home'),
+    url(r'^about/', get_about_page, name='about')
 ]

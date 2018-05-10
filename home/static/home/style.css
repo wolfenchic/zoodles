@@ -4,12 +4,14 @@ body {
 
 a, h4, h3, h2, h1 {
    color: #5EC5C4;
+   font-family: 'Indie Flower', cursive;
 }
 
 .btn-default {
     background-color: #5EC5C4;
     color: white;
     font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .banner {
@@ -24,6 +26,7 @@ a, h4, h3, h2, h1 {
 
 .navbar-nav {
     font-size: 1.8rem;
+    font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -76,19 +79,19 @@ margin-top: 0px;
     padding-bottom: 20px;
 }
 
-#text-carousel {
-    background-color: white;
-    opacity: 0.8;
+#text-carousel{
+    /*background-color: white;*/
     margin-top: 100px;
     
 }
 
 .carousel1 {
+    background-color: white;
+    opacity: 0.6;
     font-family: 'Indie Flower', cursive;
     font-size: 3rem;
     color: #5EC5C4;
     text-align: center;
-    opacity: 1.0;
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -106,6 +109,14 @@ margin-top: 0px;
 
 .carousel-control {
     color: #FF69B4;
+}
+
+.aboutSection {
+    margin: 100px 20px 20px 20px;
+}
+
+.aboutParagraph{
+    font-size: 1.6rem;
 }
 
 @media only screen and (max-width: 500px) {
