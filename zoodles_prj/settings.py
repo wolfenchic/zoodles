@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'zoodles_prj',
     'home', 
     'django_forms_bootstrap',
+    'art',
 ]
 
 MIDDLEWARE = [
