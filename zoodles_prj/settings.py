@@ -25,7 +25,7 @@ SECRET_KEY = 'ao-&ws@($anlab2-h=huncodjh*b(4)(_^704@946h2@^_9+#2'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["zoodles-wolfenchic.c9users.io"]
+ALLOWED_HOSTS = ["zoodles-cloned-wolfenchic.c9users.io"]
 
 
 # Application definition
