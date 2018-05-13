@@ -7,6 +7,7 @@ a, h4, h3, h2, h1 {
    font-family: 'Indie Flower', cursive;
 }
 
+
 .btn-default {
     background-color: #5EC5C4;
     color: white;
@@ -22,18 +23,32 @@ a, h4, h3, h2, h1 {
 }
 
 .banner {
-            z-index: 1;
-            -webkit-filter: brightness(110%) ;
+        z-index: 1;
+        -webkit-filter: brightness(110%) ;
 }
 
 
 .navbar-trans {
   background: white; }
+  
 
-.navbar-nav {
-    font-size: 1.8rem;
-    font-family: 'Montserrat', sans-serif;
+
+.nav{
+    list-style:none;
+    margin: 20px;
+    text-align:center;
+    font-size: 2rem;
+
 }
+.nav li{
+    display:inline;
+    color: #5EC5C4;
+}
+.nav a{
+    display:inline-block;
+}
+
+
 
 
 #landingImage {
@@ -55,14 +70,6 @@ margin-top: 0px;
 	font-size: 4rem;
 }
 
-/*.categories {*/
-/*    margin-top: 20px;*/
-   
-/*    background-size: cover;*/
-/*    -webkit-filter: brightness(150%);*/
-    /*padding-bottom: 20px;*/
-    
-/*}*/
 
 .Ava, .Nathan, .Abigail {
     -webkit-filter: brightness(130%);
@@ -149,9 +156,10 @@ margin-top: 0px;
 
 
 @media only screen and (max-width: 500px) {
-    .landingText {
+    .landingText, .landingImage {
         font-size: 2rem;
         margin: auto;
+        margin-top: 200px;
     }
 }
 
