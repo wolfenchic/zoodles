@@ -18,6 +18,8 @@ from django.contrib import admin
 from home.views import get_home_page
 from home.views import get_about_page
 from art import urls as art_urls
+from django.views.static import serve
+from django.conf import settings
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
