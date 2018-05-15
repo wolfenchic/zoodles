@@ -26,16 +26,16 @@
             </div>
             <div class="col-lg-6 col-sm-6 col-xs-12 text-left">
                  <div class="card nameCard text-center">
-              <img class="nameArt Ava img-responsive" src="{% static 'home/images/name2.jpeg' %}"/> 
+              <img class="nameArt Ava img-responsive" src="{% static 'home/images/name2.jpeg' %}" alt="Name art"/> 
               <p class="aboutParagraph">Ava: A for Angel fish, Vulture and Anteater. </p>
-                    <a href="#" class="btn btn-default orderName" onclick="#">Order Now</a>
+                    <a href="{% url 'contact' %}" class="btn btn-default orderName" onclick="#">Order Now</a>
                     </div>
                     <br>
                     <br>
                  <div class="card nameCard text-center">
-              <img class="nameArt Nathan img-responsive" src="{% static 'home/images/name3.jpeg' %}"/> 
+              <img class="nameArt Nathan img-responsive" src="{% static 'home/images/name3.jpeg' %}" alt="Name art"/> 
               <p class="aboutParagraph">Nautical Nathy opted for a mix of blues and lots of underwater pals.</p>
-                    <a href="#" class="btn btn-default orderName" onclick="#">Order Now</a>
+                    <a href="{% url 'contact' %}" class="btn btn-default orderName" onclick="#">Order Now</a>
                     </div>
                     </div>
 
@@ -43,9 +43,9 @@
             
         <div class="col-lg-6 col-sm-6 col-xs-12 text-left">
             <div class="card nameCard text-center">
-                   <img class="nameArt img-responsive" src="{% static 'home/images/barney.jpeg' %}"/>
+                   <img class="nameArt img-responsive" src="{% static 'home/images/barney.jpeg' %}" alt="Children's art"/>
                     <p class="aboutParagraph">Barney & Beau's favourite selection of animals, even mystical animals too.</p>
-                    <a href="#" class="btn btn-default orderName" onclick="#">Order Now</a>
+                    <a href="{% url 'contact' %}" class="btn btn-default orderName" onclick="#">Order Now</a>
                     </div>
                       <br>
                     </div>
@@ -54,18 +54,18 @@
         <div class="row">        
          <div class="col-lg-6 col-sm-6 col-xs-12">
             <div class="card nameCard text-center">
-                   <img class="nameArt Abigail img-responsive" src="{% static 'home/images/name9.jpeg' %}"/>
+                   <img class="nameArt Abigail img-responsive" src="{% static 'home/images/name9.jpeg' %}" alt="art for children"/>
                     <p class="aboutParagraph">Abigail's name is spelt with the help of animal friends big and small.</p>
-                    <a href="#" class="btn btn-default orderName" onclick="#">Order Now</a>
+                    <a href="{% url 'contact' %}" class="btn btn-default orderName" onclick="#">Order Now</a>
                     </div>
                       <br>
                       </div>
             
             <div class="col-lg-6 col-sm-6 col-xs-12">
             <div class="card nameCard text-center">
-                   <img class="nameArt img-responsive" src="{% static 'home/images/maddox.jpeg' %}"/>
+                   <img class="nameArt img-responsive" src="{% static 'home/images/maddox.jpeg' %}" alt="art for children"/>
                     <p class="aboutParagraph">Life's a beach for Maddox.</p>
-                    <a href="#" class="btn btn-default orderName" onclick="#">Order Now</a>
+                    <a href="{% url 'contact' %}" class="btn btn-default orderName" onclick="#">Order Now</a>
                     </div>
                       <br>
                     </div>
@@ -76,18 +76,18 @@
         <div class="row">
          <div class="col-lg-6 col-sm-6 col-xs-12">
                <div class="card nameCard text-center">
-              <img class="nameArt img-responsive" src="{% static 'home/images/name8.jpeg' %}"/> 
+              <img class="nameArt img-responsive" src="{% static 'home/images/name8.jpeg' %}" alt="art for children"/> 
               <p class="aboutParagraph">A colourful carnival for Carys</p>
-                    <a href="#" class="btn btn-default orderName" onclick="#">Order Now</a>
+                    <a href="{% url 'contact' %}" class="btn btn-default orderName" onclick="#">Order Now</a>
                     </div>
                     <br>
                    </div>
                    
                  <div class="col-lg-6 col-sm-6 col-xs-12">
                 <div class="card nameCard text-center">
-              <img class="nameArt Nathan img-responsive" src="{% static 'home/images/name4.jpeg' %}"/> 
+              <img class="nameArt Nathan img-responsive" src="{% static 'home/images/name4.jpeg' %}" alt="art, children's art, custom art, dictionary art, name art"/> 
               <p class="aboutParagraph">Mystical Megan's fantasy land </p>
-                    <a href="#" class="btn btn-default orderName" onclick="#">Order Now</a>
+                    <a href="{% url 'contact' %}" class="btn btn-default orderName" onclick="#">Order Now</a>
                     </div>
                     <br>
                     </div>
@@ -99,9 +99,9 @@
  {% for art in art %}
         <div class="col-lg-6 col-sm-6 col-xs-12">
                 <div class="card nameCard text-center">
-                 <img class="nameArt img-responsive" src="{{ MEDIA_URL }}{{ art.image }}"/>
+                 <img class="nameArt img-responsive" src="{{ MEDIA_URL }}{{ art.image }}"  alt="art, children's art, custom art, dictionary art, name art"/>
                     <p class="aboutParagraph">{{ art.description }}</p>
-                     <a href="#" class="btn btn-default orderName" onclick="#">Order Now</a>
+                     <a href="{% url 'contact' %}" class="btn btn-default orderName" onclick="#">Order Now</a>
                     </div>
                       <br>
                     </div>

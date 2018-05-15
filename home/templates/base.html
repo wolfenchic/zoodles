@@ -17,6 +17,7 @@
     {% endblock head_style %} 
     {% block head_js %}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+     <script src="{% static 'home/js/script.js' %}"></script>
     {% endblock head_js %}
     <title>Zoodles</title>
 </head>
@@ -27,9 +28,9 @@
         <nav class="navbar navbar-default navbar-masthead navbar-trans navbar-fixed-top">
             <div class="container-fluid">
                 <div class="navbar-header navbar-left">
-                    <a class="brand" href="/"><img class="img-responsive" src="{% static 'home/images/zoodles.1.png' %}"><h3>.co.uk</h3></img></a>
+                    <a class="brand" href="/"><img class="img-responsive" src="{% static 'home/images/zoodles.co.png' %}"></img></a>
 
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <button type="button" class="navbar-toggle collapsed pull-right" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -48,11 +49,47 @@
                 </div>
             </div>
         </nav>
-    </section>
+    </section
      
 
  <div class="container-fluid">
         {% block content %} {% endblock %}
     </div>
+    
+    <hr>
+        <section id="Footer">
+        <footer class="myFooter">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-4 text-center">
+                        <h3>My Art</h3>
+                        <a href="{% url 'name' %}">Name Portraits</a>
+                        <br>
+                        <a href="{% url 'dictionary' %}">Dictionary Prints</a>
+
+                        
+
+                    </div>
+                    <div class="col-sm-4">
+                       <img class="img-responsive footerLogo" src="{% static 'home/images/zoodles.co.png' %}"></img>
+                     </div>
+                     
+                    <div class="col-sm-4 text-center">
+                        <h2>Contact</h2>
+                            <a href="{% url 'contact' %}">Contact</a>
+                            <br>
+                            <a href="{% url 'about' %}">About</a>
+                        </div>
+                        <br>
+                   <div class="col-12 text-center">
+                       <p>Website designed with <i class="fa fa-heart"></i> by <a href="https://www.nicholawolfe.com/">Nichola Wolfe</a></p>
+                   </div>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+    </section>
+
 </body>
 </html>
