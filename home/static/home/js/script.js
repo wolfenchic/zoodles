@@ -19,7 +19,7 @@ $(".card").mouseenter(function(){
 });
 
 $(".card").mouseleave(function(){
-    $(this).css("background-color", "white").css("color", "#4a4af");
+    $(this).css("background-color", "white").css("color", "#4a4a4f");
 });
 });
 
