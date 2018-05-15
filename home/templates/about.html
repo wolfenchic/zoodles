@@ -1,5 +1,8 @@
 {% extends "base.html" %} {% load staticfiles %} {% load bootstrap_tags %} {% block content %}
 
+<br>
+<br>
+<br>
 
 <section class="container-fluid aboutSection">
     <div class="row">
@@ -10,17 +13,18 @@
     <div class="row">
         <div class="col-sm-6 col-xs-12">
             <p class="aboutParagraph">Hi!<br> Welcome to Zoodles.<br>I'm artist and designer Sara. I make unique and personalised paintings inspired by the imagination of children.
-            <a href="#">The name portraits </a> are made with your choice of theme and the child's name. Wether they're obsessed with dinonsaurs or curious about the world under the sea we can create an orginal painting just for you.</p>
+            <a href="{% url 'name' %}">The name portraits </a> are made with your choice of theme and the child's name. Wether they're obsessed with dinonsaurs or curious about the world under the sea we can create an orginal painting just for you.  If a child loves ballet, then I can put them all in tutu's! Or each animal could be a member of the circus. Your imagination guides how fun your image can be!</p>
             <br>
             <p class="aboutParagraph">
-             <a href="#">The dictionary animal prints</a> are designed to make learning fun! Pick a letter and an animal character that starts with the same letter. Customise your animal character with your imagination. If a child loves ballet, then I can put them all in tutu's! Or each animal could be a member of the circus. Your imagination guides how fun your image can be!</p>   
+             <a href="{% url 'dictionary' %}">The dictionary animal prints</a> are designed to make learning fun! Pick a print of your chosen letter. The animal charachter and letter are printed onto the dictionary page that contains that anima's description.
+If you require a more personalised dictionary print, please get in touch to discuss ideas and prices.</p>   
             </p>
             <br>
             <p class="aboutParagraph">
                 I can help you choose you colour palette and design, just pop me an email to get your design started. Click the order now button to contact me about your custom nursery art piece or be inspired by browsing completed pieces.
             </p>
             <br>
-            <a href="#" class="btn btn-default viewProduct" onclick="#">Order Now</a>
+            <a href="{% url 'contact' %}" class="btn btn-default viewProduct" onclick="#">Order Now</a>
         </div>
         <div class="col-sm-6 col-xs-12">
         <img class="card-img-top img-responsive" src="{% static 'home/images/sara.jpeg' %}"/>

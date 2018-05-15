@@ -17,6 +17,7 @@ from django.conf.urls import url, include
 from django.contrib import admin
 from home.views import get_home_page
 from home.views import get_about_page
+from home.views import get_contact_page
 from art import urls as art_urls
 from django.views.static import serve
 from django.conf import settings
@@ -25,6 +26,7 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', get_home_page, name='home'),
     url(r'^about/', get_about_page, name='about'),
+     url(r'^contact/', get_contact_page, name='contact'),
     url(r'^art/', include(art_urls)),
     url(r'^media/(?P<path>.*)$', serve, {'document_root': settings.MEDIA_ROOT})
 ]
