@@ -95,21 +95,19 @@
 </div>
 
  {% for art in art %}
-    <div class="container-fluid">
-        <div class="row cardRow">
-        <div class="col-lg-3 col-sm-4 col-xs-10 text-left">
-            <div class="card reviewCard">
-                    <img class="card-img-top" src="{{ MEDIA_URL }}{{ art.image }}" width="100%"; height="300px"/>
-                    <!--<div class="card-block p-4">-->
-                    <h4 class="cardlabels">{{ art.name }}</h4>
-                    <p class="cardPostPublish">{{ art.description |truncatewords:10 }}</p>
-
+        <div class="row">
+        <div class="col-lg-6 col-sm-6 col-xs-12">
+                <div class="card nameCard text-center">
+                 <img class="nameArt img-responsive" src="{{ MEDIA_URL }}{{ art.image }}"/>
+                    <p class="aboutParagraph">{{ art.description }}</p>
+                     <a href="#" class="btn btn-default orderName" onclick="#">Order Now</a>
                     </div>
                       <br>
                     </div>
      
     {% endfor %}
 
+</div>
 
 
 {% endblock content %}
