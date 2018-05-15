@@ -92,10 +92,8 @@
                     </div>
              
              
-</div>
-
+<div class="row">
  {% for art in art %}
-        <div class="row">
         <div class="col-lg-6 col-sm-6 col-xs-12">
                 <div class="card nameCard text-center">
                  <img class="nameArt img-responsive" src="{{ MEDIA_URL }}{{ art.image }}"/>
@@ -109,5 +107,6 @@
 
 </div>
 
+</div>
 
 {% endblock content %}
