@@ -5,5 +5,9 @@ from django.contrib.auth.decorators import login_required
 
 # Create your views here.
 def get_name_page(request):
-    art = Art.objects.all()
+    art = Art.objects.filter(art_category = 1)
     return render(request, 'art/name.html', {'art': art})
+    
+def get_dictionary_page(request):
+    art = Art.objects.filter(art_category = 2)
+    return render(request, 'art/dictionary.html', {'art': art})

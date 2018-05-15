@@ -1,0 +1,122 @@
+{% extends "base.html" %} {% load staticfiles %} {% load bootstrap_tags %} {% block content %}
+
+<br>
+<br>
+<br>
+<br>
+<br>
+   <div class="container-fluid">
+        <div class="row cardRow">
+            <div class="col-sm-8 col-lg-8 col-xs-12 col-sm-offset-2 col-lg-offset-2 nameIntro text-center">
+                <p>
+                <h1>Dictionary Prints</h1>
+                My dictionary prints are designed to make learning fun and help children with letter and word recognition.
+                Pick a print of your chosen letter. These are printed on a dictionary page which contains the animal description.
+                If you require a more personalised dictionary print, please get in touch to discuss ideas and prices.
+                  <h4>Prices</h4>
+                  £24 per print
+                  <br>
+                  £35 framed
+                  <br>
+                  POSTAGE: (unframed) Royal Mail signed for £4.99<br>
+                  Framed - courier rates
+                </p>
+            </div>
+            </div>
+            
+            <div class="row">
+                
+             <div class="col-lg-4 col-sm-4 col-xs-12">  
+                <div class="card dictionaryCard text-center">
+              <img class="nameArt dictionaryPrint img-responsive" src="{% static 'home/images/Alphabet.jpg' %}"/> 
+              <p class="aboutParagraph">All the letters of the alphabet</p>
+                    <a href="#" class="btn btn-default orderName" onclick="#">Order Now</a>
+                    </div>
+                    </div>
+                    
+            <div class="col-lg-4 col-sm-4 col-xs-12">  
+                <div class="card dictionaryCard text-center">
+              <img class="nameArt dictionaryPrint img-responsive" src="{% static 'home/images/Caterpillar.jpg' %}"/> 
+              <p class="aboutParagraph">C is for clever caterpillar</p>
+                    <a href="#" class="btn btn-default orderName" onclick="#">Order Now</a>
+                    </div>
+                    </div>
+                    
+            <div class="col-lg-4 col-sm-4 col-xs-12">  
+                <div class="card dictionaryCard text-center">
+              <img class="nameArt dictionaryPrint img-responsive" src="{% static 'home/images/elephant.jpg' %}"/> 
+              <p class="aboutParagraph">E is for an entertaining elephant</p>
+                    <a href="#" class="btn btn-default orderName" onclick="#">Order Now</a>
+                    </div>
+                    </div>
+            
+            </div>
+            
+            <div class="row">
+            <div class="col-lg-4 col-sm-4 col-xs-12">    
+            <div class="card dictionaryCard text-center">
+              <img class="nameArt img-responsive" src="{% static 'home/images/dictionary4.jpeg' %}"/> 
+              <p class="aboutParagraph">F is for a friendly frog</p>
+                    <a href="#" class="btn btn-default orderName" onclick="#">Order Now</a>
+                    </div>
+                    </div>
+            
+              <div class="col-lg-4 col-sm-4 col-xs-12">  
+                <div class="card dictionaryCard text-center">
+              <img class="nameArt dictionaryPrint img-responsive" src="{% static 'home/images/Giraffe.jpg' %}"/> 
+              <p class="aboutParagraph">G is for a greedy giraffe</p>
+                    <a href="#" class="btn btn-default orderName" onclick="#">Order Now</a>
+                    </div>
+                    </div>
+                    
+              <div class="col-lg-4 col-sm-4 col-xs-12">  
+                <div class="card dictionaryCard text-center">
+              <img class="nameArt dictionaryPrint img-responsive" src="{% static 'home/images/Jaguar.jpg' %}"/> 
+              <p class="aboutParagraph">J is for a jazzy jaguar</p>
+                    <a href="#" class="btn btn-default orderName" onclick="#">Order Now</a>
+                    </div>
+                    </div>
+
+                    </div>
+ 
+                
+              <div class="row">
+                  
+             <div class="col-lg-4 col-sm-4 col-xs-12">
+            <div class="card dictionaryCard text-center">
+              <img class="nameArt img-responsive" src="{% static 'home/images/dictionary2.jpeg' %}"/> 
+              <p class="aboutParagraph">L is for lovely ladybirds </p>
+                    <a href="#" class="btn btn-default orderName" onclick="#">Order Now</a>
+                    </div>
+                    </div>
+                
+                    
+                <div class="col-lg-4 col-sm-4 col-xs-12">  
+                <div class="card dictionaryCard text-center">
+              <img class="nameArt dictionaryPrint img-responsive" src="{% static 'home/images/owl.jpg' %}"/> 
+              <p class="aboutParagraph">O is for an old owl</p>
+                    <a href="#" class="btn btn-default orderName" onclick="#">Order Now</a>
+                    </div>
+                    </div>
+                </div>
+
+                 
+        
+<div class="row">
+ {% for art in art %}
+        <div class="col-lg-6 col-sm-6 col-xs-12">
+                <div class="card dictionaryCard text-center">
+                 <img class="nameArt dictionaryPrint img-responsive" src="{{ MEDIA_URL }}{{ art.image }}"/>
+                    <p class="aboutParagraph">{{ art.description }}</p>
+                     <a href="#" class="btn btn-default orderName" onclick="#">Order Now</a>
+                    </div>
+                      <br>
+                    </div>
+     
+    {% endfor %}
+
+</div>
+
+</div>
+
+{% endblock content %}
