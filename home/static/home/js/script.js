@@ -15,12 +15,18 @@ $('a').mouseleave(function(){
 });
 
 $(".card").mouseenter(function(){
-    $(this).css("background-color", "#5EC5C4").css("color", "white");
+    $(this).add(".cardTitle").css("background-color", "#5EC5C4").css("color", "white");
+    $(".btn-default").css("background-color", "white").css("color", "#5EC5C4");
+    
 });
 
 $(".card").mouseleave(function(){
-    $(this).css("background-color", "white").css("color", "#4a4a4f");
+    $(this).add(".cardTitle").css("background-color", "white").css("color", "#4a4a4f");
+    $(".btn-default").css("background-color", "#5EC5C4").css("color", "white");
+    $(".cardTitle").css("background-color", "white").css("color", "#5EC5C4")
+   
 });
+
 });
 
 
