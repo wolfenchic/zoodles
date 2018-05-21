@@ -27,8 +27,20 @@ $(".card").mouseleave(function(){
    
 });
 
+$(".categoryCard2").mouseenter(function(){
+    $(this).add(".cardTitle").css("background-color", "#5EC5C4").css("color", "white");
+    $(".btn-default").css("background-color", "white").css("color", "#5EC5C4");
+    
 });
 
+$(".categoryCard2").mouseleave(function(){
+    $(this).add(".cardTitle").css("background-color", "white").css("color", "#4a4a4f");
+    $(".btn-default").css("background-color", "#5EC5C4").css("color", "white");
+    $(".cardTitle").css("background-color", "white").css("color", "#5EC5C4")
+   
+});
+
+});
 
 
 

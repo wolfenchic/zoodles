@@ -89,7 +89,7 @@ margin-top: 0px;
     text-align: center;
 }
 
-.categoryCard {
+.categoryCard1, .categoryCard2 {
     background-color: white;
     padding: 20px 10px 20px 10px;
     padding-bottom: 40px;
@@ -180,7 +180,7 @@ margin-top: 0px;
    filter:none !important;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 500px) {
     .landingText, .banner {
         font-size: 2rem;
         margin: auto;
@@ -188,10 +188,25 @@ margin-top: 0px;
     }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 700px) {
     .carousel1, .carousel2 {
         font-size: 1.5rem;
         margin: auto;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .landingText, .banner{
+        font-size: 2rem;
+        margin: auto;
+        margin-top: 200px;
+        margin-left: 20px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .cardRow, .aboutRow, .contactRow {
+        margin-top: 100px;
     }
 }
 
