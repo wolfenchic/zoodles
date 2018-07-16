@@ -124,6 +124,20 @@
 
 </div>
 
+<h1> Quote Prints</h1>
+<div class="row">
+ {% for quote in art %}
+        <div class="col-lg-4 col-sm-4 col-xs-12">
+                <div class="card dictionaryCard text-center">
+                 <img class="nameArt dictionaryPrint img-responsive" src="{% static 'home/images/test.jpg' %}"  alt="art, children's art, custom art, dictionary art, name art"/>
+                    <p class="aboutParagraph">{{ art.description }}</p>
+                     <a href="{% url 'contact' %}" class="btn btn-default orderName" onclick="#">Order Now</a>
+                    </div>
+                      <br>
+                    </div>
+     
+    {% endfor %}
+
 </div>
 
 {% endblock content %}

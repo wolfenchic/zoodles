@@ -10,4 +10,5 @@ def get_name_page(request):
     
 def get_dictionary_page(request):
     art = Art.objects.filter(art_category = 2)
-    return render(request, 'art/dictionary.html', {'art': art})
+    quote = Art.objects.filter(art_category = 3)
+    return render(request, 'art/dictionary.html', {'art': art, 'quote': quote})

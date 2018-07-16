@@ -26,7 +26,7 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', get_home_page, name='home'),
     url(r'^about/', get_about_page, name='about'),
-     url(r'^contact/', get_contact_page, name='contact'),
+    url(r'^contact/', get_contact_page, name='contact'),
     url(r'^art/', include(art_urls)),
     url(r'^media/(?P<path>.*)$', serve, {'document_root': settings.MEDIA_ROOT})
 ]
