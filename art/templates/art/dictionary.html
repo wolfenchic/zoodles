@@ -130,7 +130,7 @@
  {% for quote in quote %}
         <div class="col-lg-4 col-sm-4 col-xs-12">
                 <div class="card dictionaryCard text-center">
-                 <img class="nameArt dictionaryPrint img-responsive" src="{% static 'home/images/test.jpg' %}"  alt="art, children's art, custom art, dictionary art, name art"/>
+                 <img class="nameArt dictionaryPrint img-responsive" src="{{ MEDIA_URL }}{{ art.image }}"  alt="art, children's art, custom art, dictionary art, name art"/>
                     <p class="aboutParagraph">{{ art.description }}</p>
                      <a href="{% url 'contact' %}" class="btn btn-default orderName" onclick="#">Order Now</a>
                     </div>
